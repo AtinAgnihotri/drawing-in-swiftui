@@ -13,6 +13,7 @@
 		85D7FA9C2679241F00100172 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D7FA9B2679241F00100172 /* Preview Assets.xcassets */; };
 		85D7FAA72679241F00100172 /* drawing_in_swiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7FAA62679241F00100172 /* drawing_in_swiftuiTests.swift */; };
 		85D7FAB22679241F00100172 /* drawing_in_swiftuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7FAB12679241F00100172 /* drawing_in_swiftuiUITests.swift */; };
+		85D7FAC02679295600100172 /* CustomPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7FABF2679295600100172 /* CustomPaths.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		85D7FAAD2679241F00100172 /* drawing-in-swiftuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drawing-in-swiftuiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D7FAB12679241F00100172 /* drawing_in_swiftuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawing_in_swiftuiUITests.swift; sourceTree = "<group>"; };
 		85D7FAB32679241F00100172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85D7FABF2679295600100172 /* CustomPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPaths.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				85D7FA982679241F00100172 /* Assets.xcassets */,
 				85D7FA9D2679241F00100172 /* Info.plist */,
 				85D7FA9A2679241F00100172 /* Preview Content */,
+				85D7FABF2679295600100172 /* CustomPaths.swift */,
 			);
 			path = "drawing-in-swiftui";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D7FAC02679295600100172 /* CustomPaths.swift in Sources */,
 				85D7FA972679241B00100172 /* ContentView.swift in Sources */,
 				85D7FA952679241B00100172 /* drawing_in_swiftuiApp.swift in Sources */,
 			);
