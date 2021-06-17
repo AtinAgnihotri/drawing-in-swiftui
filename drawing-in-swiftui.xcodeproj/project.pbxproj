@@ -14,6 +14,7 @@
 		85D7FAA72679241F00100172 /* drawing_in_swiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7FAA62679241F00100172 /* drawing_in_swiftuiTests.swift */; };
 		85D7FAB22679241F00100172 /* drawing_in_swiftuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7FAB12679241F00100172 /* drawing_in_swiftuiUITests.swift */; };
 		85D7FAC02679295600100172 /* CustomPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7FABF2679295600100172 /* CustomPaths.swift */; };
+		85D7FAC226792B0400100172 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7FAC126792B0400100172 /* Shapes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		85D7FAB12679241F00100172 /* drawing_in_swiftuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawing_in_swiftuiUITests.swift; sourceTree = "<group>"; };
 		85D7FAB32679241F00100172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85D7FABF2679295600100172 /* CustomPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPaths.swift; sourceTree = "<group>"; };
+		85D7FAC126792B0400100172 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				85D7FA9D2679241F00100172 /* Info.plist */,
 				85D7FA9A2679241F00100172 /* Preview Content */,
 				85D7FABF2679295600100172 /* CustomPaths.swift */,
+				85D7FAC126792B0400100172 /* Shapes.swift */,
 			);
 			path = "drawing-in-swiftui";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				85D7FAC02679295600100172 /* CustomPaths.swift in Sources */,
 				85D7FA972679241B00100172 /* ContentView.swift in Sources */,
 				85D7FA952679241B00100172 /* drawing_in_swiftuiApp.swift in Sources */,
+				85D7FAC226792B0400100172 /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
