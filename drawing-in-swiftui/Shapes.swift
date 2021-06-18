@@ -22,10 +22,11 @@ struct Triangle: Shape {
     }
 }
 
-struct Arc: Shape {
+struct Arc: InsettableShape {
     var startAngle: Angle
     var endAngle: Angle
     var clockwise: Bool
+    var insetAmount: CGFloat = 0
     
     func path(in rect: CGRect) -> Path {
         let rotationAdjustment = Angle.degrees(90)
@@ -33,8 +34,14 @@ struct Arc: Shape {
         let modifiedEnd = endAngle - rotationAdjustment
         var path = Path()
 //        path.move(to: CGPoint(x: rect.maxX, y: rect.midY))
-        path.addArc(center: CGPoint(x: rect.midX, y: rect.midY), radius: rect.width/2, startAngle: modifiedStart, endAngle: modifiedEnd, clockwise: clockwise)
+        path.addArc(center: CGPoint(x: rect.midX, y: rect.midY), radius: rect.width/2 - insetAmount, startAngle: modifiedStart, endAngle: modifiedEnd, clockwise: clockwise)
         return path
+    }
+    
+    func inset(by amount: CGFloat) -> some InsettableShape {
+        var arc = self
+        arc.insetAmount += amount
+        return arc
     }
 }
 
@@ -49,7 +56,7 @@ struct Shapes: View {
             Arc(startAngle: .degrees(0), endAngle: .degrees(250), clockwise: false).stroke(Color.blue, style: StrokeStyle(lineWidth: 4, lineCap: .round, lineJoin: .round)).frame(width: 100, height: 100, alignment: .center)
             Arc(startAngle: .degrees(0), endAngle: .degrees(250), clockwise: true).stroke(Color.blue, style: StrokeStyle(lineWidth: 4, lineCap: .round, lineJoin: .round)).frame(width: 100, height: 100, alignment: .center)
             */
-            Arc(startAngle: .degrees(0), endAngle: .degrees(110), clockwise: true).stroke(Color.blue, style: StrokeStyle(lineWidth: 4, lineCap: .round, lineJoin: .round)).frame(width: 100, height: 100, alignment: .center)
+            Arc(startAngle: .degrees(0), endAngle: .degrees(110), clockwise: true).strokeBorder(Color.blue, style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
         }
     }
 }
