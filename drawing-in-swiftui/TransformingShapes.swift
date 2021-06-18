@@ -34,24 +34,60 @@ struct Flower: Shape {
 
 struct TransformingShapes: View {
     @State private var petalOffset = -20.0
-    @State private var petalWidth = 100.0
+    @State private var petalWidth = 0.0
     
     var body: some View {
         VStack {
             Flower(petalOffset: petalOffset, petalWidth: petalWidth)
 //                .stroke(Color.red, lineWidth: 2)
-                .fill(Color.red, style: FillStyle(eoFill: true))
-                .transition(.scale)
+//                    .fill(Color.red, style: FillStyle(eoFill: true))
+                .fill(ImagePaint(image: Image("moon_sample"), scale: 0.5))
+                .animation(.easeInOut(duration: 2))
+//                .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+//                    .background(Image("moon_sample").resizable().scaledToFit())
+//                .clipped()
+//                .transition(.scale)
+                
+//                .animation(
+//                            Animation.easeOut(duration: 1)
+//                                .repeatForever(autoreverses: true)
+//                        )
+//            GeometryReader { geo in
+//                Flower(petalOffset: petalOffset, petalWidth: petalWidth)
+//    //                .stroke(Color.red, lineWidth: 2)
+////                    .fill(Color.red, style: FillStyle(eoFill: true))
+//                    .fill(ImagePaint(image: Image("moon_sample"), scale: 0.5))
+//                    .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
+////                    .background(Image("moon_sample").resizable().scaledToFit())
+//                    .clipped()
+//                    .animation(
+//                                Animation.easeOut(duration: 1)
+//                                    .repeatForever(autoreverses: true)
+//                            )
+////                    .animation(.easeInOut(duration: 2))
+////                    .transition(.scale)
+//            }
+            
 //            TextField
             
             Text("Offset")
             Slider(value: $petalOffset, in: -40...40)
                 .padding([.horizontal, .bottom])
 
-            Text("Width")
-            Slider(value: $petalWidth, in: 0...100)
-                .padding(.horizontal)
+//            Text("Width")
+//            Slider(value: $petalWidth, in: 0...100)
+//                .padding(.horizontal)
+            Button("Animate Width") {
+                withAnimation(.easeInOut(duration: 2)) {
+                    self.petalWidth += 25
+                }
+            }
             
+        }.onAppear {
+//            withAnimation (.easeIn){
+//                self.petalWidth += 100
+//            }
+//            self.petalWidth += 100
         }
     }
 }
