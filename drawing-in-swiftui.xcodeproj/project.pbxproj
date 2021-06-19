@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		852E9D6A267E19C400F0E945 /* ArrowShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852E9D69267E19C400F0E945 /* ArrowShape.swift */; };
 		857F3C0E267CE275007F85DA /* TransformingShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F3C0D267CE275007F85DA /* TransformingShapes.swift */; };
 		857F3C10267CEA5B007F85DA /* CreativeBorders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F3C0F267CEA5B007F85DA /* CreativeBorders.swift */; };
 		857F3C12267D9E37007F85DA /* EnablingMetal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F3C11267D9E37007F85DA /* EnablingMetal.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		852E9D69267E19C400F0E945 /* ArrowShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowShape.swift; sourceTree = "<group>"; };
 		857F3C0D267CE275007F85DA /* TransformingShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformingShapes.swift; sourceTree = "<group>"; };
 		857F3C0F267CEA5B007F85DA /* CreativeBorders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeBorders.swift; sourceTree = "<group>"; };
 		857F3C11267D9E37007F85DA /* EnablingMetal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablingMetal.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				857F3C15267DC608007F85DA /* AnimatingSimpleShapes.swift */,
 				857F3C17267DD278007F85DA /* AnimatingComplexShapes.swift */,
 				857F3C19267DD9F5007F85DA /* SwiftUISpirograph.swift */,
+				852E9D69267E19C400F0E945 /* ArrowShape.swift */,
 			);
 			path = "drawing-in-swiftui";
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				85D7FA972679241B00100172 /* ContentView.swift in Sources */,
 				857F3C0E267CE275007F85DA /* TransformingShapes.swift in Sources */,
 				857F3C12267D9E37007F85DA /* EnablingMetal.swift in Sources */,
+				852E9D6A267E19C400F0E945 /* ArrowShape.swift in Sources */,
 				857F3C1A267DD9F5007F85DA /* SwiftUISpirograph.swift in Sources */,
 				85D7FA952679241B00100172 /* drawing_in_swiftuiApp.swift in Sources */,
 				857F3C16267DC608007F85DA /* AnimatingSimpleShapes.swift in Sources */,
