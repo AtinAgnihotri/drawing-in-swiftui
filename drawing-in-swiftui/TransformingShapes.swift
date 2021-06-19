@@ -40,8 +40,8 @@ struct TransformingShapes: View {
         VStack {
             Flower(petalOffset: petalOffset, petalWidth: petalWidth)
 //                .stroke(Color.red, lineWidth: 2)
-//                    .fill(Color.red, style: FillStyle(eoFill: true))
-                .fill(ImagePaint(image: Image("moon_sample"), scale: 0.5))
+                .fill(Color.red, style: FillStyle(eoFill: true))
+//                .fill(ImagePaint(image: Image("moon_sample"), scale: 0.5))
                 .animation(.easeInOut(duration: 2))
 //                .frame(width: geo.size.width, height: geo.size.height, alignment: .center)
 //                    .background(Image("moon_sample").resizable().scaledToFit())
@@ -74,9 +74,9 @@ struct TransformingShapes: View {
             Slider(value: $petalOffset, in: -40...40)
                 .padding([.horizontal, .bottom])
 
-//            Text("Width")
-//            Slider(value: $petalWidth, in: 0...100)
-//                .padding(.horizontal)
+            Text("Width")
+            Slider(value: $petalWidth, in: 0...100)
+                .padding(.horizontal)
             Button("Animate Width") {
                 withAnimation(.easeInOut(duration: 2)) {
                     self.petalWidth += 25

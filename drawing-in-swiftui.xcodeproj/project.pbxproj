@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		857F3C0E267CE275007F85DA /* TransformingShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F3C0D267CE275007F85DA /* TransformingShapes.swift */; };
 		857F3C10267CEA5B007F85DA /* CreativeBorders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F3C0F267CEA5B007F85DA /* CreativeBorders.swift */; };
+		857F3C12267D9E37007F85DA /* EnablingMetal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857F3C11267D9E37007F85DA /* EnablingMetal.swift */; };
 		85D7FA952679241B00100172 /* drawing_in_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7FA942679241B00100172 /* drawing_in_swiftuiApp.swift */; };
 		85D7FA972679241B00100172 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D7FA962679241B00100172 /* ContentView.swift */; };
 		85D7FA992679241F00100172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D7FA982679241F00100172 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		857F3C0D267CE275007F85DA /* TransformingShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformingShapes.swift; sourceTree = "<group>"; };
 		857F3C0F267CEA5B007F85DA /* CreativeBorders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeBorders.swift; sourceTree = "<group>"; };
+		857F3C11267D9E37007F85DA /* EnablingMetal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnablingMetal.swift; sourceTree = "<group>"; };
 		85D7FA912679241B00100172 /* drawing-in-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "drawing-in-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D7FA942679241B00100172 /* drawing_in_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawing_in_swiftuiApp.swift; sourceTree = "<group>"; };
 		85D7FA962679241B00100172 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				85D7FAC126792B0400100172 /* Shapes.swift */,
 				857F3C0D267CE275007F85DA /* TransformingShapes.swift */,
 				857F3C0F267CEA5B007F85DA /* CreativeBorders.swift */,
+				857F3C11267D9E37007F85DA /* EnablingMetal.swift */,
 			);
 			path = "drawing-in-swiftui";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				85D7FAC02679295600100172 /* CustomPaths.swift in Sources */,
 				85D7FA972679241B00100172 /* ContentView.swift in Sources */,
 				857F3C0E267CE275007F85DA /* TransformingShapes.swift in Sources */,
+				857F3C12267D9E37007F85DA /* EnablingMetal.swift in Sources */,
 				85D7FA952679241B00100172 /* drawing_in_swiftuiApp.swift in Sources */,
 				85D7FAC226792B0400100172 /* Shapes.swift in Sources */,
 			);

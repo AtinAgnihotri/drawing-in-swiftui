@@ -10,11 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            NavigationLink(
-                destination: TransformingShapes(),
-                label: {
-                    Text("Navigate")
-                })
+//            NavigationLink(
+//                destination: TransformingShapes(),
+//                label: {
+//                    Text("Navigate")
+//                })
+            EnablingMetal()
         }
     }
 }
