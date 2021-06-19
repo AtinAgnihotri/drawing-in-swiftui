@@ -13,6 +13,11 @@ struct Flower: Shape {
     // How wide to make each petal
     var petalWidth: Double = 100
     
+    var animatableData: Double {
+        get { petalWidth }
+        set { self.petalWidth = newValue }
+    }
+    
     func path(in rect: CGRect) -> Path {
         var path = Path()
         // Count from 0 up to pi * 2, moving up pi / 8 each time
@@ -39,6 +44,7 @@ struct TransformingShapes: View {
     var body: some View {
         VStack {
             Flower(petalOffset: petalOffset, petalWidth: petalWidth)
+//                .fill(ImagePaint(image: Image("moon_sample"), scale: 0.1))
 //                .stroke(Color.red, lineWidth: 2)
                 .fill(Color.red, style: FillStyle(eoFill: true))
 //                .fill(ImagePaint(image: Image("moon_sample"), scale: 0.5))
@@ -84,9 +90,9 @@ struct TransformingShapes: View {
             }
             
         }.onAppear {
-//            withAnimation (.easeIn){
-//                self.petalWidth += 100
-//            }
+            withAnimation (.easeIn){
+                self.petalWidth += 100
+            }
 //            self.petalWidth += 100
         }
     }
