@@ -19,6 +19,7 @@ struct ColorCyclingRectangle: View {
                         self.color(for: value, brightness: 1),
                         self.color(for: value, brightness: 0.5),
                     ]), startPoint: .top, endPoint: .bottom), lineWidth: 2)
+                
             }
             
         }
