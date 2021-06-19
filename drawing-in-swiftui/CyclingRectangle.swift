@@ -20,6 +20,7 @@ struct ColorCyclingRectangle: View {
                         self.color(for: value, brightness: 0.5),
                     ]), startPoint: .top, endPoint: .bottom), lineWidth: 2)
             }
+            
         }
         .drawingGroup() // This offloads frawing to GPU using Metal, comment this out to go back to core performance
         
